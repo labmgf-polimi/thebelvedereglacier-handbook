@@ -1,4 +1,45 @@
 site_name: TheBelvedereGlacier Handbook
 site_url: https://labmgf-polimi.github.io/thebelvedereglacier-handbook
+
+# Configuration
 theme:
   name: material
+  palette:
+    primary: blue
+  font:
+    text: Open Sans
+  language: en
+  features:
+    - navigation.path
+    - navigation.footer
+
+# Customisation
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/LabMGF
+    - icon: fontawesome/brands/github
+      link: https://github.com/labmgf-polimi
+  consent:
+    title: Cookie consent
+    description: >-
+
+
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+repo_url: https://github.com/labmgf-polimi/thebelvedereglacier-handbook
+
+plugins:
+  - search
+
+# Page tree
+nav:
+  - Home: index.md
+  - Website: website-intro.md
+  - Exploring the glacier:
+      - 3D Viewer: 3d-viewer.md
+  - Learning resources: learning-resources.md
+

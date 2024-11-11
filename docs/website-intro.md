@@ -1,4 +1,4 @@
-# The Belvedere Glacier Handbook
+# Website
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 

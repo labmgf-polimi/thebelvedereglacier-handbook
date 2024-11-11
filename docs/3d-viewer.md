@@ -1,4 +1,4 @@
-# The Belvedere Glacier Handbook
+# 3D Viewer
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
