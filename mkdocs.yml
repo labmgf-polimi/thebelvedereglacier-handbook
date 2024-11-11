@@ -5,7 +5,22 @@ site_url: https://labmgf-polimi.github.io/thebelvedereglacier-handbook
 theme:
   name: material
   palette:
-    primary: blue
+    #primary: blue grey
+    #accent: cyan
+    # Palette toggle for light mode
+    - scheme: slate
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: default
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
   font:
     text: Open Sans
   language: en
@@ -41,5 +56,9 @@ nav:
   - Website: website-intro.md
   - Exploring the glacier:
       - 3D Viewer: 3d-viewer.md
+      - 2D Map explorer: 2d-map-explorer.md
+      - Open Data: glacier-open-data.md
   - Learning resources: learning-resources.md
+  - References: biblio.md
+
 
