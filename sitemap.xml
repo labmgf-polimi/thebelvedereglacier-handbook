@@ -6,7 +6,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://labmgf-polimi.github.io/thebelvedereglacier-handbook/2d-map-explorer/</loc>
+         <lastmod>2024-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://labmgf-polimi.github.io/thebelvedereglacier-handbook/3d-viewer/</loc>
+         <lastmod>2024-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://labmgf-polimi.github.io/thebelvedereglacier-handbook/biblio/</loc>
+         <lastmod>2024-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://labmgf-polimi.github.io/thebelvedereglacier-handbook/glacier-open-data/</loc>
          <lastmod>2024-11-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
