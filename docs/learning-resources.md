@@ -31,3 +31,8 @@ Each module covers essential concepts of GNSS survey, photogrammetry and GIS pro
 * Project responsible and supervisor: Livio Pinto, Full Professor at DICA - PoliMi (livio.pinto@polimi.it)
 
 * Reference persons for learning resources: Federica Gaspari, PhD Student at DICA - PoliMi (federica.gaspari@polimi.it), Francesco Ioli, PostDoc at UZH (francesco.ioli@polimi.it)
+
+## Disclaimer
+
+The preparation of the teaching material was supported by the [EGU Higher Education Teaching Material Grant 2023](https://www.egu.eu/education/teg/hetg/2023/).
+
