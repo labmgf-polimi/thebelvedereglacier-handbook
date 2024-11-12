@@ -381,17 +381,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Open Data
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -401,43 +390,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -511,32 +463,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -554,20 +480,32 @@
 
 
 <h1 id="glacier-open-data">Glacier Open Data</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<p>All results from the photogrammetric campaigns, including <strong>point clouds</strong>, <strong>orthophotos</strong>, and <strong>DSMs</strong>, are publicly available in a <a href="https://zenodo.org/records/10817029">Zenodo repository</a>. Would like to know more aboout these types of data? You can learn more about them and their nature on our <a href="../learning-resources/">Learning Resources</a> from the Belvedere Summer School.</p>
+<p>This rich dataset offers researchers a valuable base for further investigating diverse topics. Potential applications include the detailed analysis of geomorphological processes like moraine collapse in response to glacier thinning or as inputs for glacier modeling to project future glacier evolution under various climate scenarios. Data are currently released under Creative Commons Attribution 4.0 International licence.</p>
+<p><img alt="Zenodo repository screenshot" src="../img/zenodo.png" /></p>
+<p>While exploring the Zenodo repository, you will notice that data, currently ranging from 1977 to 2023, are downloaded in single packages year by year. You can access a preview of the content of each package by clicking the eye button.</p>
+<p>All the files are named according to the following naming schema:</p>
+<p>"belv_YYYY_surveyplatform_datatype[_resolution][vertical_datum][-tile_number].extension"</p>
+<p>where: </p>
+<pre><code>- YYYY: is the year of the survey
+- surveyplatform: can be either "uav" for the UAV-based photogrammetry survey or "histo" for the historical aerial datasets.
+- datatype*: can be either "pcd" for point clouds, "orthophoto" for orthophotos and "dsm" for DSMs. 
+- resolution: on-ground resolution of each pixel in meters. This applies only to raster data (orthophoto and DSMs)
+- vertical_datum: if the DSM is given in orthometric coordinates, the label "ortho" is present in the filename, otherwise the height of the dataset is supposed to be ellipsoidal.
+- tile: tile number, if the data is tiled to avoid large files.
 </code></pre>
+<p>Additionally, a sample Python script is provided (<em>read_metadata.py</em>) in order to help read the metadata included in each package.</p>
+<p><img alt="Example of open data package content for year 2023" src="../img/zenodo-open-data-example.png" /></p>
+<p>Once you identify your year of interest, you can proceed with the download of the data package.</p>
+<p>The downloaded Digital Surface Models and Orthophotos can be easily imported in a GIS environment with QGIS as raster files from the menu <em>Layer &gt; Add Layer &gt; Add raster layer</em> and then simply select the preferred raster file to upload. You can also simply drag and drop it inside the Map Canvas.</p>
+<p>Similarly, starting from QGIS 3.32, the downloaded pointclouds can be imported in a GIS environment with QGIS as raster files from the menu <em>Layer &gt; Add Layer &gt; Add pointcloud layer</em> and then select the preferred file to upload. You can also simply drag and drop it inside the Map Canvas.</p>
+<p>If you want to learn more about how to use QGIS, please refer to our Summer School <a href="https://tars4815.github.io/belvedere-summer-school/module4/module4/">Learning Resources</a> - Module 4 dedicated to GIS tools.</p>
+<p>Traditionally, pointclouds can be analysed and processed in another free and open source software, such as <a href="https://www.danielgm.net/cc/">CloudCompare</a>. Also, in this case, you can simply drag and drop the laz file in the main window to start analysing it.</p>
+<h1 id="reference">Reference</h1>
+<p>If you use our dataset for your study or work, please consider citing the work as follows:</p>
+<ul>
+<li>Ioli, F., De Gaetani, C., Barbieri, F., Gaspari, F., Pinto, L., &amp; Rossi, L. (2024). <strong>Belvedere Glacier long-term monitoring Open Data</strong> (2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.10817029</li>
+</ul>
 
 
 
