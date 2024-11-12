@@ -1,4 +1,4 @@
-# thebelvedereglacier-handbook
+# TheBelvedereGlacier-Handbook
 Handbook for exploring the belvedere glacier website.
 This Handbook, hosted on Github Pages with MkDocs material template, is intended to be the practical guide for people interested in learning more about the **[Belvedere Glacier project](https://thebelvedereglacier.it/)** curated since 2015 by *[LabMGF](https://labmgf.dica.polimi.it/)* at the [Department of Civil and Environmental Engineering](https://www.dica.polimi.it/) of [Politecnico di Milano](https://www.polimi.it/).
 
