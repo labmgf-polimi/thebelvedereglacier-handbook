@@ -30,9 +30,27 @@ Once you identified with the cursor the starting point of the measurement, left 
 
 ![Belvedere Glacier 3D viewer measurement tool](img/3d-viewer-measurement-tutorial.png)
 
+Every new measurement is saved as a new *measurement object* inside the Scene tree, accessible through the **Scene** section on the later sidebar. In the folder group named *Measurements*, you can find the newly created measurement together with its properties (coordinates of its vertex, distance). From here you can either  
+
+![Belvedere Glacier 3D viewer measurement object](img/3d-viewer-measurement-tutorial-object.png)
+
 ### Cross-section extraction
 
 BLA BLA BLA
+
+![Belvedere Glacier 3D viewer multiple pointclouds in a scene](img/3d-viewer-scene-multiple-objects.png)
+
+BLA BLA BLAA
+
+![Belvedere Glacier 3D viewer cross-section tool](img/3d-viewer-cross-section-tutorial.png)
+
+Similarly to the measurement function, each new section is saved as a new *Profile Object* within the scene tree, accessible from the *Scene* section of the later sidebar. In the folder group named *Measurements* you will find the newly created section along with its properties. 
+
+![Belvedere Glacier 3D viewer cross-section object](img/3d-viewer-cross-section-tutorial-object.png)
+
+From here you can change the thickness of the section in the *Width* box: the greater the width, the greater the number of points from the point clouds that will be used for tracing the section. However, if the section is too large, the result may be inaccurate, making it difficult to understand the morphology of the site. Once you defined it, click the *show 2d profile* button. It opens a new window containing the 2D view of the extracted profile. From here you can evaluate both quantitatively and qualitatively how glacier heights changed over time.
+
+![Belvedere Glacier 3D viewer cross-section object](img/3d-viewer-cross-section-tutorial-2d-panel.png)
 
 ## Open source code
 
