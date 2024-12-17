@@ -65,9 +65,21 @@ From here you can change the thickness of the section in the *Width* box: the gr
 
 [...]
 
+![Belvedere Glacier 3D viewer Pointclouds selection](img/3d-viewer-pointclouds-selection.png)
+
+[...]
+
+![Belvedere Glacier 3D viewer Pointclouds sequence](img/3d-viewer-pointclouds-storyline.png)
+
 ### GCPs time series
 
 [...]
+
+![Belvedere Glacier 3D viewer selection of survey year for GCPs](img/3d-viewer-gcp-tutorial.png)
+
+[...]
+
+![Belvedere Glacier 3D viewer Ground Control Points time series](img/3d-viewer-gcp-time-series.png)
 
 ## Open source code
 
