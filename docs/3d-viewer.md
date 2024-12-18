@@ -63,11 +63,19 @@ From here you can change the thickness of the section in the *Width* box: the gr
 
 ### Temporal exploration
 
-[...]
+The interface includes a timeline slider and a dropdown menu for selecting specific years. The dropdown, as shown in the first image, lists available years such as 1977, 1991, 2001, 2009, and several others up to 2023. Selecting a year loads the corresponding point cloud dataset, which represents the glacier’s surface geometry for that specific year.
+
+At the bottom of the viewer, a year navigation bar displays the currently selected year. Users can navigate between years using the left and right arrows, making it easy to load and compare different point clouds.
 
 ![Belvedere Glacier 3D viewer Pointclouds selection](img/3d-viewer-pointclouds-selection.png)
 
-[...]
+Once a specific year is selected, the 3D Viewer displays the glacier’s surface as a detailed point cloud model. In the second image, the 1991 point cloud is loaded, showing the terrain, glacier extents, and surrounding features with high accuracy. Each point in the cloud represents a 3D coordinate, capturing the elevation and shape of the glacier at the time of the survey.
+
+Users can navigate the scene using interactive tools for zooming, panning, and rotating the view. This allows for a close inspection of surface features such as ice extents, debris-covered zones, and terrain roughness.
+
+Switching between years allows users to observe how the glacier surface has evolved across decades. By comparing point cloud datasets from different years, it is possible to detect changes such as glacier retreat, surface lowering, and shifts in moraine deposits.
+
+The 3D Viewer’s smooth transition between datasets facilitates visual comparisons, making it easier to identify areas of significant change.
 
 ![Belvedere Glacier 3D viewer Pointclouds sequence](img/3d-viewer-pointclouds-storyline.png)
 
