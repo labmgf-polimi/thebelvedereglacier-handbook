@@ -731,9 +731,12 @@ Now you see a new red line in the scene: that indicates that you successfully cr
 <p>[...]</p>
 <p><img alt="Belvedere Glacier 3D viewer Pointclouds sequence" src="../img/3d-viewer-pointclouds-storyline.png" /></p>
 <h3 id="gcps-time-series">GCPs time series</h3>
-<p>[...]</p>
+<p>This section explains how to use the 3D Viewer connected to a database to visualize annual glacier measurements and explore time series data for individual points.</p>
+<p>At the top of the interface, there is a dropdown menu labeled “Select Survey Year.” Clicking on this menu reveals a list of available years, such as 2015 through 2024. Selecting a specific year will load the corresponding glacier measurement data into the viewer. This allows users to explore the glacier’s surface as it was surveyed during that year.</p>
 <p><img alt="Belvedere Glacier 3D viewer selection of survey year for GCPs" src="../img/3d-viewer-gcp-tutorial.png" /></p>
-<p>[...]</p>
+<p>Next to the dropdown, a button labeled “Load GNSS Measurements” enables users to display measured points on the glacier. Once loaded, the points appear across the glacier surface within the 3D scene. Each point corresponds to a GNSS station or reference location where measurements have been collected annually.</p>
+<p>Once the GNSS points are visible, clicking on any individual point in the 3D scene triggers an interactive information panel. The panel displays precise details, including the point’s geographic coordinates, the date of its first and most recent surveys, and other relevant data.</p>
+<p>Additionally, a small graph appears alongside the point information, showing the time series of measurements, such as velocity changes over time. This graph visualizes trends for the selected point, helping users analyze variations in glacier motion or surface elevation across multiple years.</p>
 <p><img alt="Belvedere Glacier 3D viewer Ground Control Points time series" src="../img/3d-viewer-gcp-time-series.png" /></p>
 <h2 id="open-source-code">Open source code</h2>
 <p>To enhance reproducibility in other research or climate change awareness contexts, the source code of the web viewer, as part of the code of the entire Belvedere website, is openly accessible and forkable for customisation in a dedicated <a href="https://github.com/Tars4815/thebelvedereglacier/tree/main/app/potree">Github repository</a>.</p>

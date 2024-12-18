@@ -73,11 +73,17 @@ From here you can change the thickness of the section in the *Width* box: the gr
 
 ### GCPs time series
 
-[...]
+This section explains how to use the 3D Viewer connected to a database to visualize annual glacier measurements and explore time series data for individual points.
+
+At the top of the interface, there is a dropdown menu labeled “Select Survey Year.” Clicking on this menu reveals a list of available years, such as 2015 through 2024. Selecting a specific year will load the corresponding glacier measurement data into the viewer. This allows users to explore the glacier’s surface as it was surveyed during that year.
 
 ![Belvedere Glacier 3D viewer selection of survey year for GCPs](img/3d-viewer-gcp-tutorial.png)
 
-[...]
+Next to the dropdown, a button labeled “Load GNSS Measurements” enables users to display measured points on the glacier. Once loaded, the points appear across the glacier surface within the 3D scene. Each point corresponds to a GNSS station or reference location where measurements have been collected annually.
+
+Once the GNSS points are visible, clicking on any individual point in the 3D scene triggers an interactive information panel. The panel displays precise details, including the point’s geographic coordinates, the date of its first and most recent surveys, and other relevant data.
+
+Additionally, a small graph appears alongside the point information, showing the time series of measurements, such as velocity changes over time. This graph visualizes trends for the selected point, helping users analyze variations in glacier motion or surface elevation across multiple years.
 
 ![Belvedere Glacier 3D viewer Ground Control Points time series](img/3d-viewer-gcp-time-series.png)
 
