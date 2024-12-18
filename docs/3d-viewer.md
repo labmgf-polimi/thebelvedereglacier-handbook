@@ -59,8 +59,7 @@ From here you can change the thickness of the section in the *Width* box: the gr
 
 ## Custom functionalities
 
-[...]
-
+In order to enhance user experience in the exploration of the scene, two additional features have been included in the GUI of the viewer, better supporting the temporal exploration of the data.
 ### Temporal exploration
 
 The interface includes a timeline slider and a dropdown menu for selecting specific years. The dropdown, as shown in the first image, lists available years such as 1977, 1991, 2001, 2009, and several others up to 2023. Selecting a year loads the corresponding point cloud dataset, which represents the glacier’s surface geometry for that specific year.
