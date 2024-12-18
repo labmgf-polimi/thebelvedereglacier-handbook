@@ -397,18 +397,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#gcps-exploration" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      GCPs exploration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#measurements-download" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Measurements download
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wms-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      WMS Connection
     </span>
   </a>
   
@@ -518,18 +527,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#gcps-exploration" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      GCPs exploration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#measurements-download" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Measurements download
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wms-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      WMS Connection
     </span>
   </a>
   
@@ -554,20 +572,26 @@
 
 
 <h1 id="2d-map-explorer">2D Map Explorer</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<p>The <a href="https://thebelvedereglacier.it/pages/web-map/index.html"><strong>2D Map Explorer</strong></a> is the web-based tool that allows every user, also without a technical background in geomatics, to virtually explore the web map of the glacier with data output from the historical in-situ monitoring campaign.
+The tool is available online freely without the need to install any technical software locally. Hence, the velocity and quality of rendering exclusively rely on the internet connection.</p>
+<p><img alt="Screenshot of the Belvedere Glacier 2D Map Explorer" src="../img/web-map.png" /></p>
+<p>The main functionalities of the web map consist in:
+* Exploration of measured Ground Control Points (GCPs) by survey year (starting from 2015) and visualisation on the map.
+* Download of GCPs measurements per year
+* Web Mapping Services links and resources</p>
+<h2 id="gcps-exploration">GCPs exploration</h2>
+<p>Clicking on the <em>Select a year</em> box, users can choose the preferred survey year. After, by clicking <em>Fetch data</em> button, that year measured GCPs will be loaded on the map as points along the glacier.
+Clicking on one of them will make appear a pop up banner that includes its label and measured coordinates.</p>
+<p>The web map also allows to load as basemap the most recent DSM or orthophoto basemap (connected as WMS). In order to activate them, users can simply click on the preferred resource name on the legend on the top-right of the map.</p>
+<p><img alt="Screenshot of the Belvedere Glacier 2D Map Explorer - DSM basemap" src="../img/leaflet.jpg" /></p>
+<p><img alt="Screenshot of the Belvedere Glacier 2D Map Explorer - Orthophoto basemap" src="../img/leaflet-ortho.jpg" /></p>
+<h2 id="measurements-download">Measurements download</h2>
+<p>After selecting a survey year to load on the map, users can also decide to export the GCPs measurements dataset for the given survey. This is possible by clicking the <em>Download CSV</em> button.
+The download Comma-Separated-Value file will be a table that is an extract of the original measurement table in the Belvedere Glacier database.</p>
+<p><img alt="Screenshot of the Belvedere Glacier 2D Map Explorer - GCPs measurements export" src="../img/gcps-export-example.png" /></p>
+<h2 id="wms-connection">WMS Connection</h2>
+<p>The on-going process of publication of the Belvedere data is taking care also of the raster. Orthophotos and Digital Surface Models are already available to download in the dedicated Zenodo repository. However, there's an ongoing process of sharing the same rasters in a read-only mode as Web Map Services.</p>
+<p>Currently orthophotos and DSMs are published on the laboratory GeoServer. In this way, by simply copying the resource URLs from the website, it is possible to visualise the raster of interest on other software that support WMS-connection, for example QGIS. At the moment, only 2023 rasters are made available but the project team is working on increasing server capacities for hosting more data.</p>
 
 
 
